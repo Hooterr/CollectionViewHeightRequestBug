@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CollectionViewHeightRequestBug.MainPage">
+
+    <Grid Padding="8" RowDefinitions="auto,auto,*" RowSpacing="8">
+
+        <Button Grid.Row="0" Text="Set 600.5" Clicked="Button_Clicked"/>
+        <Button Grid.Row="1"  Text="Set 600" Clicked="Button_Clicked_1"/>
+
+        <CollectionView Background="#80ff00ff" x:Name="collection" Grid.Row="2"/>
+
+    </Grid>
+
+</ContentPage>
+
